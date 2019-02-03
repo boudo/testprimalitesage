@@ -5,14 +5,14 @@ import sys
 from sage.all import *
 
 
-def fermat(n, it) :
+def Fermat(n, it) :
 	print("fermat")
 	expo = n - 1
 	modul = n
 
 	for i in range(0, it) : 
 		#print("debut  rand")
-		a = randrange(3, n)
+		a = randrange(2, n) # ici
 		
 		#print("random = ")
 		#print(a)
@@ -33,10 +33,8 @@ def fermat(n, it) :
 
 
 print("debut*******************")
-a = 2^216091 - 1
-b = 1
-print(fermat(a , b))
-print("fin pgcd = ")
-print(gcd(4, 4))
-print("fin squar")
-print(power_mod(6,30,31))
+a = 2^23209-1
+b = 5
+print(Fermat(a , b))
+
+
