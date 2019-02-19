@@ -33,8 +33,14 @@ def Fermat(n, it) :
 
 
 print("debut*******************")
-a = 2^23209-1
-b = 5
-print(Fermat(a , b))
+#expo = '521'
+#a = '2^'+expo+'-1'
+#iter = '5'
+#print( Fermat( sage_eval(a) , sage_eval(iter) ) )
+
+expo = 521
+a = 2**expo - 1
+iter = 5
+print( Fermat( a, iter ) )
 
 

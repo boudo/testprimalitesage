@@ -81,9 +81,8 @@ def MillerRabin(n, iter) :
 print("************* debut du TEST *******************")
 
 iter = 5
-n = 651693055693681
-#n = 2^23209-1
-print(n)
+#n = 651693055693681
+n = 5
 print( MillerRabin(n, iter) )
 
 print("************* fin du TEST **********************")
